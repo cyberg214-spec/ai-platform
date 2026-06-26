@@ -1,0 +1,50 @@
+export const features = [
+  {
+    id: 0,
+    title: "AI Pipeline Engine",
+    description: "Build and deploy multi-step AI workflows with zero infrastructure overhead. Auto-scales on demand.",
+    icon: "arrow-path",
+    size: "large", // spans 2 cols
+    color: "var(--color-forsythia)",
+  },
+  {
+    id: 1,
+    title: "Real-Time Analytics",
+    description: "Live dashboards with sub-100ms data refresh. Visualize every metric that matters.",
+    icon: "chart-pie",
+    size: "small",
+    color: "var(--color-deep-saffron)",
+  },
+  {
+    id: 2,
+    title: "Smart Integrations",
+    description: "Connect 200+ tools instantly. REST, GraphQL, webhooks — all unified in one config layer.",
+    icon: "link-solid",
+    size: "small",
+    color: "var(--color-forsythia)",
+  },
+  {
+    id: 3,
+    title: "Trend Forecasting",
+    description: "Predictive models trained on your data. Forecast demand, churn, and revenue with confidence intervals.",
+    icon: "arrow-trending-up",
+    size: "small",
+    color: "var(--color-deep-saffron)",
+  },
+  {
+    id: 4,
+    title: "Cognitive Search",
+    description: "Semantic search across all your data sources. Find anything in milliseconds using vector embeddings.",
+    icon: "search",
+    size: "small",
+    color: "var(--color-forsythia)",
+  },
+  {
+    id: 5,
+    title: "System Orchestration",
+    description: "Coordinate agents, models, and APIs in complex chains. Full observability at every node.",
+    icon: "cog-8-tooth",
+    size: "large",
+    color: "var(--color-deep-saffron)",
+  },
+];

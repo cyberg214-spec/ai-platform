@@ -1,26 +1,51 @@
-@import "tailwindcss";
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700;800&family=Inter:wght@400;500;600;700;800&display=swap');
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --font-jetbrains: "JetBrains Mono", monospace;
+  --font-inter: "Inter", sans-serif;
+
+  /* Exact palette from color sheet */
+  --color-forsythia:        #FFC801;
+  --color-nocturnal:        #114C5A;
+  --color-arctic:           #F1F6F4;
+  --color-mystic-mint:      #D9E8E2;
+  --color-deep-saffron:     #FF9932;
+  --color-oceanic-noir:     #172B36;
+
+  /* Roles */
+  --color-bg:       #0D1F27;
+  --color-surface:  #172B36;
+  --color-border:   #1E3A47;
+  --color-accent:   #FFC801;
+  --color-accent-2: #FF9932;
+  --color-text:     #F1F6F4;
+  --color-muted:    #D9E8E2;
+
+  /* Motion — exactly as spec */
+  --ease-micro:   150ms ease-out;
+  --ease-hover:   200ms ease-out;
+  --ease-layout:  350ms ease-in-out;
 }
 
-@theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+*, *::before, *::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
-  }
-}
+html { scroll-behavior: smooth; }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  background-color: var(--color-bg);
+  color: var(--color-text);
+  font-family: var(--font-inter);
+  -webkit-font-smoothing: antialiased;
+}
+
+h1, h2, h3, h4, h5 {
+  font-family: var(--font-jetbrains);
 }
