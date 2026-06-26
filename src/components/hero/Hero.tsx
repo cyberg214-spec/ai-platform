@@ -227,7 +227,46 @@ export default function Hero() {
           </div>
         ))}
       </div>
+{/* DEMO VIDEO */}
+      <div
+        style={{
+          width: "100%",
+          maxWidth: "900px",
+          margin: "4rem auto 0",
+          borderRadius: "16px",
+          overflow: "hidden",
+          border: "1px solid var(--color-border)",
+          boxShadow: "0 24px 80px rgba(0,0,0,0.4)",
+          position: "relative",
+          animation: "fadeUp 0.4s 0.4s ease-out both",
+        }}
+      >
+        {/* Glow behind video */}
+        <div aria-hidden="true" style={{
+          position: "absolute",
+          inset: "-2px",
+          borderRadius: "18px",
+          background: "linear-gradient(135deg, var(--color-accent), var(--color-accent-2))",
+          zIndex: -1,
+          opacity: 0.3,
+        }} />
 
+        <video
+          autoPlay
+          muted
+          loop
+          playsInline
+          controls
+          style={{
+            width: "100%",
+            display: "block",
+            borderRadius: "16px",
+          }}
+        >
+          <source src="/demo.mp4" type="video/mp4" />
+          Your browser does not support the video tag.
+        </video>
+      </div>
       {/* SCROLL INDICATOR */}
       <div
         aria-hidden="true"
